@@ -30,6 +30,7 @@ class Game {
         this.gameScreen.style.height = `${this.height}px`
         this.gameScreen.style.width = `${this.width}px`
         this.startScreen.style.display = 'none'
+        this.gameEndScreen.style.display = 'none'
         this.gameScreen.style.display = 'inherit'
         this.gameLoop()
 

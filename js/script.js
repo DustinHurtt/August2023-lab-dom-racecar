@@ -9,7 +9,7 @@ window.onload = function () {
   });
 
   function startGame() {
-    console.log("start game");
+
     game = new Game()
     game.start()
 
@@ -17,7 +17,6 @@ window.onload = function () {
     document.addEventListener('keydown', (e) => {
 
       if (e.key === 'ArrowUp') {
-        console.log(game.player)
         game.player.directionY = -1
       }
 
@@ -37,7 +36,7 @@ window.onload = function () {
   
   }
 
-  
+
   restartButton.addEventListener("click", function () {
     startGame();
   });
